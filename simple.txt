@@ -1,0 +1,56 @@
+
+<html>
+	
+<center>
+<font face ="Comic sans MS" size="20"><b>LEADERS</b></font>
+<marquee><font face = "comic sans MS" size="8"color ="white" >These are the famous leaders in India....Narendra Modi is the current Prime minister of India....Pranab Mukerjee is the current president of India....Smt Pratibha Patel is the first lady president of India....</font></marquee>
+
+<hr>
+<style type="text/css">
+.pic{
+	width:20px;
+	height:20px;
+}
+.picbig{
+	position: absolute;
+	width:0px;
+	-webkit-transition:width 0.3s linear 0s;
+	transition:width 0.3s linear 0s;
+	z-index:10;
+}
+.pic:hover + .picbig{
+	width:500px;
+	height:500px;
+}
+</style>
+
+
+<img class="pic" src="Images/modi8.jpg " style="width:350px;height:400px;">
+<img class="picbig" src="Images/l4.jpg" alt= "l4">
+<img class="pic"src="Images/singh8.jpg " style="width:350px;height:400px;">
+<img class="picbig" src="Images/l5.jpg" alt= "l5">
+<img class="pic"src="Images/vajpayee8.1.jpg " style="width:350px;height:400px;">
+<img class="picbig" src="Images/l6.jpg" alt= "l6">
+<img class="pic"src="Images/rajiv8.jpg " style="width:350px;height:400px;">
+<img class="picbig" src="Images/l7.jpg" alt= "l7">
+<img class="pic"src="Images/indira8.jpg " style="width:350px;height:400px;">
+<img class="picbig" src="Images/l8.jpg" alt= "l8">
+<img class="pic"src="Images/pranab8.jpg " style="width:350px;height:400px;">
+<img class="picbig" src="Images/l9.jpg" alt= "l9">
+<img class="pic"src="Images/nehru8.jpg " style="width:350px;height:400px;">
+<img class="picbig" src="Images/l11.jpg" alt= "l10">
+<img class="pic"src="Images/sonia8.jpg " style="width:350px;height:400px;">
+<img class="picbig" src="Images/l12.jpg" alt= "l11">
+<img class="pic"src="Images/kalam8.jpg " style="width:350px;height:400px;">
+<img class="picbig" src="Images/l1.jpg" alt= "l12">
+<img class="pic"src="Images/dhiru8.jpg " style="width:350px;height:400px;">
+<img class="picbig" src="Images/l2.jpg" alt= "l1">
+<img class="pic"src="Images/pratiba8.jpg " style="width:350px;height:400px;">
+<img class="picbig" src="Images/l10.jpg" alt= "l2">
+<img class="pic"src="Images/l3.jpg " style="width:350px;height:400px;">
+<img class="picbig" src="Images/l3.jpg" alt= "l3">
+
+
+<hr>
+</body>
+</html>

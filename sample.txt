@@ -1,0 +1,4 @@
+#eaf8fc
+#c4d9df #a4c3ca #83afb7
+ background-image: linear-gradient(#fff, #d4e8ec);
+ #f2f2f2

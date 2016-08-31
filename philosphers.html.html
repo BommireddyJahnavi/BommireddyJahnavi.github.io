@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Philosphers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content=cwidth=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color:#eaf8fc;
+      padding: 15px;
+    }
+#social{
+float:right;
+margin:15px 30px 0px 80px;
+}
+#social ul li{
+float: left;
+list-style:none;
+padding-right:5px;
+}
+#social img{
+height : 55px;
+width : 55px;
+}
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  #searchbox
+{
+    background-color: #eaf8fc;
+    background-image:#eaf8fc ;
+    border-radius: 35px;    
+    border-width: 5px;
+    border-style: solid;
+    border-color:#eaf8fc ;            
+    width: 50px;
+    height: 20px;
+    padding: 10px;
+    margin: 100px auto 50px;
+    overflow: hidden; /* Clear floats */
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+  </style>
+</head>
+<body>
+
+
+<div class="jumbotron">
+
+  
+<div class="container text-center">
+   <h1> <a href="index.html.html" class="button">Home</a><img src="http://www.animatedimages.org/data/media/1632/animated-scientist-image-0014.gif" style = "height:100px ; width: 100px;alt="Image"><img src = "C:\Users\jahnavi97\Downloads\PP2CRJpm.gif" width ="320" height = "80" alt ="logo" title="PHILOSPHERS"/></left>
+<div id="social">
+<ul>
+<li><a href="http://www.facebook.com" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAYFBMVEU2ZKL///9IcqosXJ6zxNw3ZaMzYqEoWZyds9KWrs9Eb6nY4e3P2ekwX6CRqsyuwNpZf7K3x97h6PE9aaVSeq/w8/j2+PtliLh7mcJvkLyBnsVXfrEdUZegttPa4+7H1OWjx4JpAAAA9ElEQVQ4je3VUXODIAwA4ChCAEUUZldrO///v6yDru11keVhe1ueOO67kIQ7gHWw9Y9hhxUWYMUClgct1DxYl6DKUYZSCQHR2ijLUDo3+zZMIXz4lHMHSmfH6hZtCbrYfbmqK0FxqVjQ1dMDFo6WeMzmsDbNaAoZMZ98mMUWLm3RUPgEV1T3LRIq0SToBfwybIpwKx/PuUZ/xs9mJAWV7LXWps0TNNv6MjsyowzVS2ikM7av8MiF74IHpzcSfq8xWLIZBSdjTH/rujdGn3bniPg0R0SxBxPm3Axwr/Af/jEknmYKWhh4cIGO+D5ifhzH+PR9XAGjqgvPQOrybAAAAABJRU5ErkJggg==" alt="facebook" title="facebook"/></a></li>
+<li><a href="http://www.youtube.com" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAA0lBMVEWJGBj////Ozs79/f2wLi7jKirhKSnKIiLJIiL39/f6+vrfKSncKCjZ2dnR0dHV1dXm5ubz8/Pi4uLd3d0AAADRJCTat7eYNTUXFxfNrq4dHR3g1dX409O3Hx+dGxtGRkabm5s6Ojp7e3vHZmb75eUODg6ysrL429vExMRVVVWSkpJhYWG7W1syMjLOKyurPT3JMTHAbW3FfHzsp6fVPDy3LCzOpKTutrbHiYm/SUnjvb3Kc3PbmprhyMjUn5/IQkK+jIy4dHSkpKR+fn5MTEzIPDy5ZUivAAABrElEQVQ4jYXTa1OjMBSAYUK7i1CQBA4XoRVskRboJSho1V7cdvf//6U9EEe7U8u+E8LMyTPkExJxPelinkskd5KQiyUTV/KSXkcJfl5rMhczfFLtLLxHbaL3hRqDrJ6FgLWNgUYRvm0DN8NuVtsnkCGHnNEMoGAsyFjw+xNQ0QJApimkM5hRP6N+JMZf4AgFpTkYJuQ0+AdYohQOlpXDtQxHK8gsPxJjBLYohdi2c5AR2EFm+5EYIzBEB4gNI25AbPiF4UdijMAUHSA3zRSKMczM+8UYIjFGcC1KowPu+d1d3uzHYizGCOTOEPQ7Q/CjMwQ/O0MwGDivw+Fwygdt+2E1OAmBrjsuIyyp9bYVqfSTWqDrE/Kg61XVLAR/OI54f3kC5g24meqPIQK3x2p9rpFkL4CDIXCcm6nzGDorMnkhc4c+8fAJT74Dy6VacnVdu6HyPag4KznTeiRcdgBtXdf1+RWbBnCulVdq6fx6F1coGAJFcekDDZUV2W3IStmGZW+NJx/g5XmO2+v6baP0n9+2u5Gy3203vAXeSOlo5Enu7ejqYqNbV/rf7/8Xd3hEAVQ3D9MAAAAASUVORK5CYII="alt="youtube" title="youtube"/></a></li>
+<li><a href="http://www.twitter.com" target="_blank"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5ism8-tC2mqWwFg_OETamtgmp1GmZV8cGkjumNk_EZ2hIz75N"alt="twitter" title="twitter"/></a></li>
+<li><a href="http://www.google+.com" target="_blank"><img src="http://fisheyeoptometrists.co.uk/communities/5/000/001/042/315//images/9588634_25x25.png"alt="google+" title="google+"/></a></li>
+<hr>
+
+</ul>
+</div><!--end of social-->
+</h1>      
+   
+<p><font color="BLUE"><marquee direction="left" style="background:ORANGE">These are the top philosphers in India.Indian philosophy (Sanskrit: darsana) comprises the philosophical traditions of the Indian subcontinent. Since medieval India (ca.1000 to 1500), schools of Indian philosophical thought have been classified by the Brahmanical tradition as either orthodox or non-orthodox  astika or nastika  depending on whether they regard the Vedas as an infallible source of knowledge. There are six schools of orthodox Hindu philosophy Nyaya, Vaisheshika, Samkhya, Yoga, Mimamsa and Vedanta  and three heterodox schools  Jain, Buddhist and Carvaka. However, there are other methods of classification; Vidyaranya for instance identifies sixteen schools of Indian philosophy by including those that belong to the Saiva and Rasesvara traditions.</marquee></font></p>
+ </div>
+ </div>
+
+ <center>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      
+<div class="item active">
+        <li><a href="https://en.wikipedia.org/wiki/Sarvepalli_Radhakrishnan"><img src="http://s3.india.com/wp-content/uploads/2015/09/marge.jpg" style = "height:400px ; width: 950px;"alt="Image"></a></li>
+        <div class="carousel-caption">
+
+        </div>      
+      </div>
+<div class="item">
+         <li><a href="https://en.wikipedia.org/wiki/Leonardo_da_Vinci"><img src="http://i.huffpost.com/gadgets/slideshows/411332/slide_411332_5182172_free.jpg" style = "height:400px ; width: 950px;"alt="Image"></a></li>
+        <div class="carousel-caption">
+
+        </div>      
+      </div>
+<div class="item">
+         <li><a href="https://en.wikipedia.org/wiki/Pranab_Mukherjee"><img src="https://s1.yimg.com/bt/api/res/1.2/LjoGaovF0hb2wVpi6RMsyA--/YXBwaWQ9eW5ld3NfbGVnbztjaD00NzM7Y3I9MTtjdz02MzA7ZHg9MDtkeT0wO2ZpPXVsY3JvcDtoPTQ3MztpbD1wbGFuZTtxPTc1O3c9NjMw/http://l.yimg.com/os/publish-images/finance/2015-02-27/3021fc00-be67-11e4-afa6-df13c5bfc97b_4_.jpg" style = "height:400px ; width: 950px;"alt="Image"></a></li>
+        <div class="carousel-caption">
+
+        </div>      
+      </div>
+<div class="item">
+         <li><a href="https://en.wikipedia.org/wiki/Shashi_Tharoor"><img src="http://www.azquotes.com/picture-quotes/quote-india-is-not-as-people-keep-calling-it-an-underdeveloped-country-but-rather-in-the-context-shashi-tharoor-43-70-73.jpg" style = "height:400px ; width: 950px;"alt="Image"></a></li>
+        <div class="carousel-caption">
+
+        </div>      
+      </div>
+<div class="item">
+         <li><a href="https://en.wikipedia.org/wiki/Aryabhata"><img src="https://s-media-cache-ak0.pinimg.com/736x/67/95/f2/6795f2a2f3faf1957e9316cdd5531ebe.jpg" style = "height:400px ; width: 950px;"alt="Image"></a></li>
+        <div class="carousel-caption">
+
+        </div>      
+      </div>
+<div class="item">
+         <li><a href="https://en.wikipedia.org/wiki/Swami_Vivekananda"><img src="http://media.santabanta.com/images/picsms/2015/sms-10234.jpg" style = "height:400px ; width: 950px;"alt="Image"></a></li>
+        <div class="carousel-caption">
+
+        </div>      
+      </div>
+<div class="item active">
+         <li><a href="https://en.wikipedia.org/wiki/Amartya_Sen"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDC3dgbGpwMNQS1lMoP8wQ5MurxjdIh1Mg_6aC2CHKVxEVQMMXbQ" style = "height:400px ; width: 950px;alt="Image"></a></li>
+        <div class="carousel-caption">
+         
+        </div>      
+      </div>
+<div class="item active">
+         <li><a href="https://en.wikipedia.org/wiki/Guru_Gobind_Singh"><img src="http://s3.india.com/wp-content/uploads/2014/11/222.jpg" style = "height:400px ; width: 950px;alt="Image"></a></li>
+        <div class="carousel-caption">
+         
+        </div>      
+      </div>
+<div class="item active">
+         <li><a href="https://en.wikipedia.org/wiki/Lala_Lajpat_Rai"><img src="http://www.azquotes.com/picture-quotes/quote-if-i-had-the-power-to-influence-indian-journals-i-would-have-the-following-headlines-lala-lajpat-rai-106-8-0814.jpg" style = "height:400px ; width: 950px;alt="Image"></a></li>
+        <div class="carousel-caption">
+         
+        </div>      
+      </div>
+<div class="item active">
+         <li><a href="https://en.wikipedia.org/wiki/Annie_Besant"><img src="http://izquotes.com/quotes-pictures/quote-better-remain-silent-better-not-even-think-if-you-are-not-prepared-to-act-annie-besant-17023.jpg" style = "height:400px ; width: 950px;alt="Image"></a></li>
+        <div class="carousel-caption">
+         
+        </div>      
+      </div>
+<div class="item active">
+         <li><a href="https://en.wikipedia.org/wiki/Rabindranath_Tagore"><img src="http://www.azquotes.com/picture-quotes/quote-by-plucking-her-petals-you-do-not-gather-the-beauty-of-the-flower-rabindranath-tagore-28-97-87.jpg" style = "height:400px ; width: 950px;alt="Image"></a></li>
+        <div class="carousel-caption">
+         
+        </div>      
+      </div>
+<div class="item active">
+         <li><a href="https://en.wikipedia.org/wiki/Mahatma_Gandhi"><img src="http://www.relatably.com/q/img/gandhi-quotes-indian-villages/mahatma-gandhi-quotes.jpg" style = "height:400px ; width: 950px;alt="Image">
+        <div class="carousel-caption">
+         
+        </div>      
+      </div>
+<div class="item active">
+          <li><a href="https://en.wikipedia.org/wiki/Rajiv_Gandhi"><li><a href=""><img src="http://www.azquotes.com/picture-quotes/quote-india-is-an-old-country-but-a-young-nation-i-am-young-and-i-too-have-a-dream-i-dream-rajiv-gandhi-72-5-0503.jpg" style = "height:400px ; width: 950px;alt="Image"></a></li>
+        <div class="carousel-caption">
+         
+        </div>      
+      </div>
+<div class="item active">
+         <li><a href="https://en.wikipedia.org/wiki/Kabir"><img src="http://i.huffpost.com/gadgets/slideshows/411332/slide_411332_5182130_free.jpg" style = "height:400px ; width: 950px;alt="Image"></a></li>
+        <div class="carousel-caption">
+         
+        </div>      
+      </div>
+<div class="item active">
+         <li><a href="https://en.wikipedia.org/wiki/B._R._Ambedkar"><img src="https://i.ytimg.com/vi/3OApS3z0lC0/maxresdefault.jpg" style = "height:400px ; width: 950px;alt="Image"></a></li>
+        <div class="carousel-caption">
+         
+        </div>      
+      </div>
+<div class="item active">
+         <li><a href="https://en.wikipedia.org/wiki/Mother_Teresa"><img src="http://inspirationboost.com/wp-content/uploads/2013/07/Mother-Teresa-Love-Quotes.jpg" style = "height:400px ; width: 950px;alt="Image"></a></li>
+        <div class="carousel-caption">
+         
+        </div>      
+      </div>
+<div class="item active">
+         <li><a href="https://en.wikipedia.org/wiki/T._S._Eliot"><img src="http://www.azquotes.com/picture-quotes/quote-a-good-half-of-the-effort-of-understanding-what-the-indian-philosophers-were-after-and-t-s-eliot-78-23-46.jpg" style = "height:400px ; width: 950px;alt="Image"></a></li>
+        <div class="carousel-caption">
+         
+        </div>      
+      </div>
+<div class="item active">
+         <li><a href="https://en.wikipedia.org/wiki/Bodhidharma"><img src="http://i.huffpost.com/gadgets/slideshows/411332/slide_411332_5182108_free.jpg" style = "height:400px ; width: 950px;alt="Image"></a></li>
+        <div class="carousel-caption">
+         
+        </div>      
+      </div>
+<div class="item active">
+         <li><a href="https://en.wikipedia.org/wiki/Vyasa"><img src="http://i.huffpost.com/gadgets/slideshows/411332/slide_411332_5182092_free.jpg" style = "height:400px ; width: 950px;alt="Image"></a></li>
+        <div class="carousel-caption">
+         
+        </div>      
+      </div>
+
+
+    </div>
+</center>   
+<footer class="container-fluid text-center">
+  <p></p>
+</footer>
+
+</body>
+</html>

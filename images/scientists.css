@@ -1,0 +1,13 @@
+#banner{
+height:350px;
+background-image: url(../Images/b1.jpg);
+background-size:cover;
+}
+#content_area{
+float:left;
+width:350px;
+margin:20px 0 20px 0;
+border: 3px solid #e3e3e3;
+color:white;
+background-image: url(../Images/background5.jpg);
+}
